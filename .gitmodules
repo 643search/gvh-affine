@@ -1,0 +1,4 @@
+[submodule "AFFiNE"]
+	path = AFFiNE
+	url = https://github.com/643search/AFFiNE.git
+	branch = gvh-custom

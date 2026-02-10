@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# Environment (contains passwords)
+deploy/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NocoDB source (tracked separately if needed)
+nocodb-source/
