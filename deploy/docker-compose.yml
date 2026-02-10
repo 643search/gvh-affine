@@ -32,7 +32,7 @@ services:
 
   # ─── AFFiNE Migration (runs once, then exits) ───────────────────────
   affine_migration:
-    image: ghcr.io/toeverything/affine:${AFFINE_REVISION:-stable}
+    image: ghcr.io/643search/affine:latest
     container_name: gvh_affine_migration
     command: ['sh', '-c', 'node ./scripts/self-host-predeploy.js']
     volumes:
@@ -50,7 +50,7 @@ services:
 
   # ─── AFFiNE Server (port 3010) ──────────────────────────────────────
   affine:
-    image: ghcr.io/toeverything/affine:${AFFINE_REVISION:-stable}
+    image: ghcr.io/643search/affine:latest
     container_name: gvh_affine
     volumes:
       - affine_storage:/root/.affine/storage
